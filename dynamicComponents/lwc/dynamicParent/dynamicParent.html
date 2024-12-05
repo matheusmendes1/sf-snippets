@@ -1,0 +1,11 @@
+<template>
+    <lightning-button
+      label="Load Dynamic Component with Property"
+      onclick={loadDynamicComponentWithProps}
+    ></lightning-button>
+
+    <lwc:component 
+      lwc:is={dynamicComponent} 
+      text={message}
+    ></lwc:component>
+</template>
